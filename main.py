@@ -1,7 +1,7 @@
 import sys
-from PyQt5.uic import loadUi
-from PyQt5 import QtWidgets, QtCore, QtGui
-from PyQt5.QtWidgets import QDialog, QApplication, QPushButton
+from PyQt6.uic import loadUi
+from PyQt6 import QtWidgets, QtCore, QtGui
+from PyQt6.QtWidgets import QDialog, QApplication, QPushButton
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from Forecast import Forecast
@@ -72,7 +72,8 @@ class ScreenForecast(QDialog):
         widget.setCurrentIndex(widget.currentIndex() - 2)
 
 
-app = QtWidgets.QApplication(sys.argv)
+# app = QtWidgets.QApplication(sys.argv)
+app = QApplication(sys.argv)
 widget = QtWidgets.QStackedWidget()
 main_window = MainWindow()
 widget.addWidget(main_window)
@@ -84,14 +85,17 @@ widget.setFixedWidth(900)
 widget.setFixedHeight(600)
 widget.show()
 
-try:
-    sys.exit(app.exec_())
-except:
-    print("Exiting")
+# PyQt6
+app.exec()
+
+# PyQt5
+# try:
+#     sys.exit(app.exec_())
+# except:
+#     print("Exiting")
 
 
 def main():
-
     my_weather = Weather("Carlsbad")
     my_forecast = Forecast(my_weather.get_location(), my_weather.get_lon(), my_weather.get_lat(),
                            my_weather.get_timezone())
