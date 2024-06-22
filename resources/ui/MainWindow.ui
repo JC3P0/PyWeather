@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -24,8 +24,8 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>900</width>
-    <height>600</height>
+    <width>1200</width>
+    <height>900</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -38,10 +38,16 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>160</y>
-     <width>90</width>
+     <y>170</y>
+     <width>101</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>5 Day Forecast</string>
@@ -53,11 +59,17 @@
   <widget class="QPushButton" name="button_forecast1">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>160</y>
-     <width>90</width>
+     <x>400</x>
+     <y>170</y>
+     <width>101</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>5 Day Forecast</string>
@@ -66,11 +78,17 @@
   <widget class="QPushButton" name="button_forecast2">
    <property name="geometry">
     <rect>
-     <x>710</x>
-     <y>160</y>
-     <width>90</width>
+     <x>699</x>
+     <y>170</y>
+     <width>101</width>
      <height>25</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>5 Day Forecast</string>
@@ -87,8 +105,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>24</pointsize>
+     <family>Tahoma</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
@@ -106,8 +124,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>24</pointsize>
+     <family>Tahoma</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
@@ -125,8 +143,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>24</pointsize>
+     <family>Tahoma</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
@@ -209,7 +227,6 @@
    </property>
    <property name="font">
     <font>
-     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -226,32 +243,33 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>290</x>
+     <x>-10</x>
      <y>-1</y>
-     <width>321</width>
+     <width>921</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>14</pointsize>
+     <family>Trebuchet MS</family>
+     <pointsize>16</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>Welcome to the Weather App</string>
+    <string>🌈🌑🌙🌬️🌧️🌊⚡🌚☃️❄️🌝Welcome to the Weather App🌞🌤️🌦️🌋🌩️🌪️🌛☔🌨️🌖🌈</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView">
+  <widget class="QGraphicsView" name="graphicsView_main0">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>220</y>
-     <width>125</width>
-     <height>125</height>
+     <y>214</y>
+     <width>151</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -268,18 +286,18 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>125</width>
-     <height>125</height>
+     <width>200</width>
+     <height>200</height>
     </size>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_2">
+  <widget class="QGraphicsView" name="graphicsView_main1">
    <property name="geometry">
     <rect>
      <x>320</x>
-     <y>220</y>
-     <width>125</width>
-     <height>125</height>
+     <y>214</y>
+     <width>151</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -296,18 +314,18 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>125</width>
-     <height>125</height>
+     <width>200</width>
+     <height>200</height>
     </size>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView_3">
+  <widget class="QGraphicsView" name="graphicsView_main2">
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>220</y>
-     <width>125</width>
-     <height>125</height>
+     <y>214</y>
+     <width>151</width>
+     <height>131</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -324,16 +342,16 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>125</width>
-     <height>125</height>
+     <width>200</width>
+     <height>200</height>
     </size>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="day0Temp">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>240</y>
+     <x>170</x>
+     <y>230</y>
      <width>80</width>
      <height>90</height>
     </rect>
@@ -358,22 +376,22 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>18</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>22</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>73°F</string>
+    <string>73°</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="day1Temp">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>240</y>
+     <x>480</x>
+     <y>230</y>
      <width>80</width>
      <height>90</height>
     </rect>
@@ -398,22 +416,22 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>18</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>22</pointsize>
     </font>
    </property>
    <property name="text">
     <string>73°F</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="day2Temp">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>240</y>
+     <x>780</x>
+     <y>230</y>
      <width>80</width>
      <height>90</height>
     </rect>
@@ -438,43 +456,36 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Black</family>
-     <pointsize>18</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>22</pointsize>
     </font>
    </property>
    <property name="text">
     <string>73°F</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_5">
+  <widget class="QLabel" name="day0Loc">
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>102</y>
+     <y>110</y>
      <width>200</width>
      <height>60</height>
     </rect>
    </property>
-   <property name="minimumSize">
-    <size>
-     <width>200</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>200</width>
-     <height>60</height>
-    </size>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
+     <family>Tahoma</family>
      <pointsize>20</pointsize>
-     <weight>50</weight>
      <italic>false</italic>
      <bold>false</bold>
     </font>
@@ -483,17 +494,23 @@
     <string>Carlsbad, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_6">
+  <widget class="QLabel" name="day1Loc">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>100</y>
+     <x>350</x>
+     <y>110</y>
      <width>200</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
@@ -509,7 +526,7 @@
    </property>
    <property name="font">
     <font>
-     <family>System</family>
+     <family>Tahoma</family>
      <pointsize>20</pointsize>
     </font>
    </property>
@@ -517,17 +534,23 @@
     <string>Carlsbad, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="day2Loc">
    <property name="geometry">
     <rect>
      <x>650</x>
-     <y>100</y>
+     <y>110</y>
      <width>200</width>
      <height>60</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
@@ -543,7 +566,7 @@
    </property>
    <property name="font">
     <font>
-     <family>System</family>
+     <family>Tahoma</family>
      <pointsize>20</pointsize>
     </font>
    </property>
@@ -551,643 +574,377 @@
     <string>Carlsbad, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>330</y>
-     <width>90</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_9">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>330</y>
-     <width>90</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_10">
-   <property name="geometry">
-    <rect>
-     <x>630</x>
-     <y>330</y>
-     <width>90</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>90</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_11">
-   <property name="geometry">
-    <rect>
-     <x>90</x>
-     <y>480</y>
-     <width>115</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Black</family>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>May 31     11:30 AM</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_12">
-   <property name="geometry">
-    <rect>
-     <x>400</x>
-     <y>480</y>
-     <width>115</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Black</family>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>May 31     11:30 AM</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>700</x>
-     <y>480</y>
-     <width>115</width>
-     <height>60</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>60</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial Black</family>
-     <pointsize>15</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>May 31     11:30 AM</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_14">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬆       Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_15">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬇       Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_16">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬆       Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_17">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬇       Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_18">
-   <property name="geometry">
-    <rect>
-     <x>610</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬆       Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_19">
-   <property name="geometry">
-    <rect>
-     <x>820</x>
-     <y>510</y>
-     <width>80</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>⬇       Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_20">
+  <widget class="QLabel" name="day0Desc">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>410</y>
-     <width>115</width>
-     <height>40</height>
+     <y>320</y>
+     <width>151</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>115</width>
+     <width>90</width>
      <height>40</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>115</width>
-     <height>40</height>
+     <width>300</width>
+     <height>125</height>
     </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>31% Humidity</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_21">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>410</y>
-     <width>115</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Wind 5 MPH</string>
+    <string>clear sky</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_22">
+  <widget class="QLabel" name="day0Date">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>500</y>
+     <width>151</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>September 31     11:30 AM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0RiseSymb">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>510</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>🌅</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0SetSymb">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>510</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>🌇</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1RiseSymb">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>510</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>🌅</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1SetSymb">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>510</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>🌇</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2RiseSymb">
    <property name="geometry">
     <rect>
      <x>620</x>
-     <y>410</y>
-     <width>115</width>
+     <y>510</y>
+     <width>80</width>
      <height>40</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>115</width>
+     <width>80</width>
      <height>40</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>115</width>
+     <width>80</width>
      <height>40</height>
     </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>31% Humidity</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_23">
-   <property name="geometry">
-    <rect>
-     <x>780</x>
-     <y>410</y>
-     <width>115</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Wind 5 MPH</string>
+    <string>🌅</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_24">
+  <widget class="QLabel" name="day2SetSymb">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>410</y>
-     <width>115</width>
+     <x>810</x>
+     <y>510</y>
+     <width>80</width>
      <height>40</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>115</width>
+     <width>80</width>
      <height>40</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>115</width>
+     <width>80</width>
      <height>40</height>
     </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Verdana</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>31% Humidity</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_25">
-   <property name="geometry">
-    <rect>
-     <x>480</x>
-     <y>410</y>
-     <width>115</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>115</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Wind 5 MPH</string>
+    <string>🌇</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="label_26">
+  <widget class="QLabel" name="day0Humid">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>10</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💧                  31% Humidity</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0Wind">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💨                  Wind 5 mph</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0SunRise">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
      <y>480</y>
      <width>80</width>
      <height>30</height>
@@ -1207,187 +964,787 @@
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
     </font>
    </property>
    <property name="text">
     <string>5:35 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_27">
+  <widget class="QLabel" name="day0SunSet">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>480</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>7:48 PM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1SunSet">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>480</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>7:48 PM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1SunRise">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>480</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>5:35 AM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2SunSet">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>480</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>7:48 PM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2SunRise">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>480</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>80</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>5:35 AM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clear0">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear Location</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clear1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>80</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear Location</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_clear2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>80</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Lucida Sans Unicode</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Clear Location</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0RiseLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>550</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sunrise</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1RiseLabel">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>550</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sunrise</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2RiseLabel">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>550</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Sunrise</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day0SetLabel">
    <property name="geometry">
     <rect>
      <x>210</x>
-     <y>480</y>
-     <width>80</width>
-     <height>30</height>
+     <y>550</y>
+     <width>63</width>
+     <height>31</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>7:48 PM</string>
+    <string>Sunset</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_28">
+  <widget class="QLabel" name="day1SetLabel">
    <property name="geometry">
     <rect>
      <x>520</x>
-     <y>480</y>
-     <width>80</width>
-     <height>30</height>
+     <y>550</y>
+     <width>63</width>
+     <height>31</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>7:48 PM</string>
+    <string>Sunset</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_29">
-   <property name="geometry">
-    <rect>
-     <x>310</x>
-     <y>480</y>
-     <width>80</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="font">
-    <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>5:35 AM</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_30">
+  <widget class="QLabel" name="day2SetLabel">
    <property name="geometry">
     <rect>
      <x>820</x>
-     <y>480</y>
-     <width>80</width>
-     <height>30</height>
+     <y>550</y>
+     <width>63</width>
+     <height>31</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>80</width>
-     <height>30</height>
-    </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>7:48 PM</string>
+    <string>Sunset</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_31">
+  <widget class="QLabel" name="day1Desc">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>480</y>
-     <width>80</width>
-     <height>30</height>
+     <x>320</x>
+     <y>320</y>
+     <width>151</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="minimumSize">
     <size>
-     <width>80</width>
-     <height>30</height>
+     <width>90</width>
+     <height>40</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>80</width>
-     <height>30</height>
+     <width>300</width>
+     <height>125</height>
     </size>
    </property>
    <property name="font">
     <font>
-     <family>System</family>
-     <pointsize>10</pointsize>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>5:35 AM</string>
+    <string>broken clouds</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignCenter</set>
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
    </property>
   </widget>
+  <widget class="QLabel" name="day2Desc">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>320</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>90</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>125</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Comic Sans MS</family>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>overcast clouds</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1Date">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>500</y>
+     <width>151</width>
+     <height>75</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>September 31     11:30 AM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2Date">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>500</y>
+     <width>151</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>60</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>September 31     11:30 AM</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="addLocation0">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>370</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add Location</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="addLocation1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add Location</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="addLocation2">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>370</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add Location</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1Humid">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💧                  31% Humidity</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2Humid">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💧                  31% Humidity</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day1Wind">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💨                  Wind 5 mph</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="day2Wind">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>400</y>
+     <width>115</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>115</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>115</width>
+     <height>75</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>💨                  Wind 5 mph</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>button_forecast0</zorder>
+  <zorder>button_forecast1</zorder>
+  <zorder>button_forecast2</zorder>
+  <zorder>line</zorder>
+  <zorder>line_2</zorder>
+  <zorder>line_3</zorder>
+  <zorder>label</zorder>
+  <zorder>graphicsView_main0</zorder>
+  <zorder>graphicsView_main1</zorder>
+  <zorder>graphicsView_main2</zorder>
+  <zorder>day0Temp</zorder>
+  <zorder>day1Temp</zorder>
+  <zorder>day2Temp</zorder>
+  <zorder>day0Loc</zorder>
+  <zorder>day1Loc</zorder>
+  <zorder>day2Loc</zorder>
+  <zorder>day0Desc</zorder>
+  <zorder>day0Date</zorder>
+  <zorder>day0RiseSymb</zorder>
+  <zorder>day0SetSymb</zorder>
+  <zorder>day1RiseSymb</zorder>
+  <zorder>day1SetSymb</zorder>
+  <zorder>day2RiseSymb</zorder>
+  <zorder>day2SetSymb</zorder>
+  <zorder>day0Humid</zorder>
+  <zorder>day0Wind</zorder>
+  <zorder>day0SunRise</zorder>
+  <zorder>day0SunSet</zorder>
+  <zorder>day1SunSet</zorder>
+  <zorder>day1SunRise</zorder>
+  <zorder>day2SunSet</zorder>
+  <zorder>day2SunRise</zorder>
+  <zorder>button_clear0</zorder>
+  <zorder>button_clear1</zorder>
+  <zorder>button_clear2</zorder>
+  <zorder>day0RiseLabel</zorder>
+  <zorder>day1RiseLabel</zorder>
+  <zorder>day2RiseLabel</zorder>
+  <zorder>day0SetLabel</zorder>
+  <zorder>day1SetLabel</zorder>
+  <zorder>day2SetLabel</zorder>
+  <zorder>day1Desc</zorder>
+  <zorder>day2Desc</zorder>
+  <zorder>day1Date</zorder>
+  <zorder>day2Date</zorder>
+  <zorder>addLocation0</zorder>
+  <zorder>addLocation1</zorder>
+  <zorder>addLocation2</zorder>
+  <zorder>day1Humid</zorder>
+  <zorder>day2Humid</zorder>
+  <zorder>day1Wind</zorder>
+  <zorder>day2Wind</zorder>
+  <zorder>button_add1</zorder>
+  <zorder>button_add0</zorder>
+  <zorder>button_add2</zorder>
  </widget>
  <resources/>
  <connections/>

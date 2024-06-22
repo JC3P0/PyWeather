@@ -1,0 +1,55 @@
+# Python cache files
+__pycache__/
+__init__.py
+*.py[cod]
+*$py.class
+
+# Virtual environment directory
+.venv/
+
+# Configuration file
+config.py
+
+# Environment and build variables file
+.env
+build
+build_scripts
+dist
+setup.py
+PyWeather.spec
+
+# MacOS files
+.DS_Store
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+
+# Unit test / coverage reports
+run_tests.py
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+test-results.xml
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# IDE files
+.vscode/
+.idea/

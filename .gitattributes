@@ -1,0 +1,27 @@
+# Ensure that all text files have normalized (LF) line endings
+* text=auto
+
+# Handle line endings for specific file types
+*.sh text eol=lf
+*.bat text eol=crlf
+*.java text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+
+# Handle line endings for binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Ensure .gitattributes itself is normalized
+.gitattributes text eol=lf
+
+# Ensure .gitignore is normalized
+.gitignore text eol=lf
