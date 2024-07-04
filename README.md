@@ -1,6 +1,7 @@
 # PyWeather
 
-    - PyWeather is a weather application built using Python and PyQt6. It fetches and displays current weather data and a 5-day forecast for a specified location using the OpenWeatherMap API.
+    - PyWeather is a simple weather application displaying weather data to a GUI built using PyQt6. 
+    - It collects and displays current weather data and a 5-day forecast for a specified location using the free OpenWeatherMap API.
 
 ## Features
 
@@ -16,33 +17,60 @@
 
 ## Setup
 
-    1. **Clone the repository:**
-    2. Create a virtual environment and activate it.
-    3. Install the required packages: pip install -r requirements.txt
-    4. Create a config.py file in the root directory and add your OpenWeatherMap API key: API_KEY = "your_openweathermap_api_key"
+    1. Create your own OpenWeatherMap.org free API key
+    2. **Clone the repository:**
+    3. Create a virtual environment and activate.
+    4. Install the required packages: pip install -r requirements.txt
 
 ## Project Structure
+    PyWeather\
+    ├── resources\
+    │   ├── ui\
+    │   │   ├── MainWindow.ui
+    │   │   ├── ScreenAddLocation.ui
+    │   │   ├── ScreenAddWeatherApi.ui
+    │   │   ├── ScreenForecast.ui
+    │   ├── icons\
+    │   └── ├── app_icon.png
+    ├── src\
+    │   ├── __init__.py
+    │   ├── main.py
+    │   ├── Day.py
+    │   ├── Forecast.py
+    │   ├── ImageLoader.py
+    │   ├── Weather.py
+    │   └── ConfigManager.py
+    ├── tests\
+    │   ├── __init__.py
+    │   ├── test_weather.py
+    │   ├── test_forecast.py
+    │   ├── test_day.py
 
-    src/
-    |-- main.py: The main entry point of the application.
-    |-- Weather.py: Contains the Weather class to fetch and parse current weather data.
-    |-- Forecast.py: Contains the Forecast class to fetch and parse 5-day weather forecast data.
-    |-- Day.py: Contains the Day class representing a single day's weather data.
-    |-- image_loader.py: Contains the ImageLoader class for loading weather icons.
-    |-- resources/
-    |   |-- icons/: Contains the icon files for the application.
-    |   |-- ui/: Contains the .ui files for the application's UI design.
-    |-- tests/
-    |   |-- test_weather.py: Unit tests for the Weather class.
-    |   |-- test_forecast.py: Unit tests for the Forecast class.
-    |   |-- test_day.py: Unit tests for the Day class.
-    |-- config.py: Configuration file for storing the OpenWeatherMap API key (not included in the repository).
+## Screenshots
+
+### API Input
+![API Input](screenshots/API_INPUT.png)
+
+### Blank Menu
+![Blank Menu](screenshots/BLANK_MENU.png)
+
+### Add Location
+![Add Location](screenshots/ADD_LOCATION.png)
+
+### Populated Menu
+![Populated Menu](screenshots/POPULATED_MENU.png)
+
+### 5 Day Forecast
+![5 Day Forecast](screenshots/5_DAY_FORECAST.png)
 
 ## Usage
 
+    - Start the application:
+        When the application starts, it will prompt you to enter your OpenWeatherMap API key. Once entered, the key is saved locally and will not be requested again unless the file is deleted or modified.
+
     - Add a location:
         Enter the city name in the "Add Location" screen.
-        Click the "Enter" button to fetch and display the weather data.
+        Click the "Enter" button to collect and display the weather data.
 
     - View the forecast:
         Click on the "Forecast" button to view the 5-day weather forecast.

@@ -2,6 +2,7 @@ import requests
 import logging
 from datetime import datetime, timezone, timedelta
 from dataclasses import dataclass
+from ConfigManager import ConfigManager
 
 logging.basicConfig(level=logging.INFO)
 
@@ -28,19 +29,21 @@ class Weather:
         """
         Generate weather data for the specified city.
         """
-        try:
-            from config import API_KEY
-        except ImportError:
-            logging.error("No API key found. Create a config.py file with your API key.")
+        config = ConfigManager.load_config()
+        api_key = config.get('Settings', 'api_key', fallback=None)
+
+        if not api_key:
+            logging.error("API key is missing or empty in config")
             return
 
-        url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&APPID={API_KEY}"
+        url = f"http://api.openweathermap.org/data/2.5/weather?q={city.replace(' ', '+')}&APPID={api_key}"
         try:
             response = requests.get(url)
             response.raise_for_status()
             data = response.json()
         except requests.RequestException as e:
-            logging.error(f"Failed to fetch weather data")
+            logging.error(f"Failed to fetch weather data.")
+            return
 
         if response.status_code == 200:
             self._parse_weather_data(data)

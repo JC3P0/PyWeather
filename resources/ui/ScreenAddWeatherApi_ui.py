@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'ScreenAddLocation.ui'
+## Form generated from reading UI file 'ScreenAddWeatherApi.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.1
 ##
@@ -30,30 +30,28 @@ class Ui_Form(object):
         Form.setSizePolicy(sizePolicy)
         Form.setMinimumSize(QSize(425, 275))
         Form.setMaximumSize(QSize(425, 275))
-        self.buttonBack = QPushButton(Form)
-        self.buttonBack.setObjectName(u"buttonBack")
-        self.buttonBack.setGeometry(QRect(180, 170, 61, 23))
+        self.inputApi = QLineEdit(Form)
+        self.inputApi.setObjectName(u"inputApi")
+        self.inputApi.setGeometry(QRect(70, 119, 281, 21))
         font = QFont()
-        font.setFamilies([u"Lucida Sans Unicode"])
-        font.setPointSize(10)
-        self.buttonBack.setFont(font)
-        self.label = QLabel(Form)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(122, 70, 181, 43))
-        self.label.setMinimumSize(QSize(173, 43))
-        self.label.setMaximumSize(QSize(999999, 999999))
+        font.setFamilies([u"Tahoma"])
+        font.setPointSize(11)
+        self.inputApi.setFont(font)
+        self.buttonSave = QPushButton(Form)
+        self.buttonSave.setObjectName(u"buttonSave")
+        self.buttonSave.setGeometry(QRect(180, 170, 61, 23))
         font1 = QFont()
         font1.setFamilies([u"Lucida Sans Unicode"])
-        font1.setPointSize(12)
-        self.label.setFont(font1)
-        self.label.setAlignment(Qt.AlignCenter)
-        self.lineEditCity = QLineEdit(Form)
-        self.lineEditCity.setObjectName(u"lineEditCity")
-        self.lineEditCity.setGeometry(QRect(130, 130, 161, 20))
+        font1.setPointSize(10)
+        self.buttonSave.setFont(font1)
+        self.inputApiLabel = QLabel(Form)
+        self.inputApiLabel.setObjectName(u"inputApiLabel")
+        self.inputApiLabel.setGeometry(QRect(30, 50, 361, 51))
         font2 = QFont()
-        font2.setFamilies([u"Tahoma"])
-        font2.setPointSize(11)
-        self.lineEditCity.setFont(font2)
+        font2.setFamilies([u"Lucida Sans Unicode"])
+        font2.setPointSize(12)
+        self.inputApiLabel.setFont(font2)
+        self.inputApiLabel.setAlignment(Qt.AlignCenter)
 
         self.retranslateUi(Form)
 
@@ -62,8 +60,8 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
-        self.buttonBack.setText(QCoreApplication.translate("Form", u"Enter", None))
-        self.label.setText(QCoreApplication.translate("Form", u"Enter a new Location", None))
-        self.lineEditCity.setText("")
+        self.inputApi.setText("")
+        self.buttonSave.setText(QCoreApplication.translate("Form", u"Save", None))
+        self.inputApiLabel.setText(QCoreApplication.translate("Form", u"Enter a valid free OpenWeatherMap API Key", None))
     # retranslateUi
 

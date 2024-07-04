@@ -31,7 +31,26 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QPushButton" name="buttonBack">
+  <widget class="QLineEdit" name="inputApi">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>119</y>
+     <width>281</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSave">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -47,29 +66,17 @@
     </font>
    </property>
    <property name="text">
-    <string>Enter</string>
+    <string>Save</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="inputApiLabel">
    <property name="geometry">
     <rect>
-     <x>122</x>
-     <y>70</y>
-     <width>181</width>
-     <height>43</height>
+     <x>30</x>
+     <y>50</y>
+     <width>361</width>
+     <height>51</height>
     </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>173</width>
-     <height>43</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>999999</width>
-     <height>999999</height>
-    </size>
    </property>
    <property name="font">
     <font>
@@ -78,29 +85,10 @@
     </font>
    </property>
    <property name="text">
-    <string>Enter a new Location</string>
+    <string>Enter a valid free OpenWeatherMap API Key</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="lineEditCity">
-   <property name="geometry">
-    <rect>
-     <x>130</x>
-     <y>130</y>
-     <width>161</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Tahoma</family>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
  </widget>

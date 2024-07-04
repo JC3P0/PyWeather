@@ -4,7 +4,7 @@ from PyQt6.QtCore import QThread, pyqtSignal
 from PyQt6.QtGui import QPixmap
 
 class ImageLoader(QThread):
-    image_loaded = pyqtSignal(int, QPixmap, object)  # Change str to object
+    image_loaded = pyqtSignal(int, QPixmap, object)
 
     def __init__(self, index, icon_url, target):
         super().__init__()

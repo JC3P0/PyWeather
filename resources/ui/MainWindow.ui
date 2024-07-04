@@ -227,6 +227,7 @@
    </property>
    <property name="font">
     <font>
+     <weight>75</weight>
      <bold>true</bold>
     </font>
    </property>
@@ -253,6 +254,7 @@
     <font>
      <family>Trebuchet MS</family>
      <pointsize>16</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
@@ -260,7 +262,7 @@
     <string>🌈🌑🌙🌬️🌧️🌊⚡🌚☃️❄️🌝Welcome to the Weather App🌞🌤️🌦️🌋🌩️🌪️🌛☔🌨️🌖🌈</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QGraphicsView" name="graphicsView_main0">
@@ -352,7 +354,7 @@
     <rect>
      <x>170</x>
      <y>230</y>
-     <width>80</width>
+     <width>101</width>
      <height>90</height>
     </rect>
    </property>
@@ -370,8 +372,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>80</width>
-     <height>90</height>
+     <width>999999</width>
+     <height>999999</height>
     </size>
    </property>
    <property name="font">
@@ -384,7 +386,7 @@
     <string>73°</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1Temp">
@@ -392,7 +394,7 @@
     <rect>
      <x>480</x>
      <y>230</y>
-     <width>80</width>
+     <width>101</width>
      <height>90</height>
     </rect>
    </property>
@@ -410,8 +412,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>80</width>
-     <height>90</height>
+     <width>99999</width>
+     <height>99999</height>
     </size>
    </property>
    <property name="font">
@@ -424,7 +426,7 @@
     <string>73°F</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2Temp">
@@ -432,7 +434,7 @@
     <rect>
      <x>780</x>
      <y>230</y>
-     <width>80</width>
+     <width>101</width>
      <height>90</height>
     </rect>
    </property>
@@ -450,8 +452,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>80</width>
-     <height>90</height>
+     <width>99999</width>
+     <height>99999</height>
     </size>
    </property>
    <property name="font">
@@ -461,18 +463,18 @@
     </font>
    </property>
    <property name="text">
-    <string>73°F</string>
+    <string>102°F</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day0Loc">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>-1</x>
      <y>110</y>
-     <width>200</width>
+     <width>301</width>
      <height>60</height>
     </rect>
    </property>
@@ -486,23 +488,24 @@
     <font>
      <family>Tahoma</family>
      <pointsize>20</pointsize>
+     <weight>50</weight>
      <italic>false</italic>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>Carlsbad, US</string>
+    <string>San Francisco, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1Loc">
    <property name="geometry">
     <rect>
-     <x>350</x>
+     <x>299</x>
      <y>110</y>
-     <width>200</width>
+     <width>301</width>
      <height>60</height>
     </rect>
    </property>
@@ -520,8 +523,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>200</width>
-     <height>60</height>
+     <width>999999</width>
+     <height>999999</height>
     </size>
    </property>
    <property name="font">
@@ -534,15 +537,15 @@
     <string>Carlsbad, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2Loc">
    <property name="geometry">
     <rect>
-     <x>650</x>
+     <x>599</x>
      <y>110</y>
-     <width>200</width>
+     <width>301</width>
      <height>60</height>
     </rect>
    </property>
@@ -560,8 +563,8 @@
    </property>
    <property name="maximumSize">
     <size>
-     <width>200</width>
-     <height>60</height>
+     <width>9999999</width>
+     <height>9999999</height>
     </size>
    </property>
    <property name="font">
@@ -574,7 +577,7 @@
     <string>Carlsbad, US</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day0Desc">
@@ -608,7 +611,7 @@
     <string>clear sky</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -639,7 +642,7 @@
     <string>September 31     11:30 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -676,7 +679,7 @@
     <string>🌅</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -713,7 +716,7 @@
     <string>🌇</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -750,7 +753,7 @@
     <string>🌅</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -787,7 +790,7 @@
     <string>🌇</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -824,7 +827,7 @@
     <string>🌅</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -861,7 +864,7 @@
     <string>🌇</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -898,7 +901,7 @@
     <string>💧                  31% Humidity</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -935,7 +938,7 @@
     <string>💨                  Wind 5 mph</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -972,7 +975,7 @@
     <string>5:35 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day0SunSet">
@@ -1006,7 +1009,7 @@
     <string>7:48 PM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1SunSet">
@@ -1040,7 +1043,7 @@
     <string>7:48 PM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1SunRise">
@@ -1074,7 +1077,7 @@
     <string>5:35 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2SunSet">
@@ -1108,7 +1111,7 @@
     <string>7:48 PM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2SunRise">
@@ -1142,7 +1145,7 @@
     <string>5:35 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="button_clear0">
@@ -1215,14 +1218,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1RiseLabel">
@@ -1238,14 +1239,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2RiseLabel">
@@ -1261,14 +1260,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunrise</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day0SetLabel">
@@ -1284,14 +1281,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1SetLabel">
@@ -1307,14 +1302,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day2SetLabel">
@@ -1330,14 +1323,12 @@
     <font>
      <family>Comic Sans MS</family>
      <pointsize>13</pointsize>
+     <weight>50</weight>
      <bold>false</bold>
     </font>
    </property>
    <property name="text">
     <string>Sunset</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1Desc">
@@ -1371,7 +1362,7 @@
     <string>broken clouds</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1408,7 +1399,7 @@
     <string>overcast clouds</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1439,7 +1430,7 @@
     <string>September 31     11:30 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1470,7 +1461,7 @@
     <string>September 31     11:30 AM</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1495,7 +1486,7 @@
     <string>Add Location</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="addLocation1">
@@ -1517,7 +1508,7 @@
     <string>Add Location</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="addLocation2">
@@ -1539,7 +1530,7 @@
     <string>Add Location</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="day1Humid">
@@ -1573,7 +1564,7 @@
     <string>💧                  31% Humidity</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1610,7 +1601,7 @@
     <string>💧                  31% Humidity</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1647,7 +1638,7 @@
     <string>💨                  Wind 5 mph</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
@@ -1684,7 +1675,7 @@
     <string>💨                  Wind 5 mph</string>
    </property>
    <property name="alignment">
-    <set>Qt::AlignmentFlag::AlignCenter</set>
+    <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
