@@ -60,3 +60,4 @@ dist
 .venv
 venv
 main.spec
+release.txt
